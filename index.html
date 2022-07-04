@@ -1317,8 +1317,6 @@ $('#gnb-left > ul > li.sub').on('mouseleave', function() {
 
 
 
-
-
 // layer-search
 $('div.search-box').on('click', function() {
   $('div.layer-search-wrapper').addClass('on');
@@ -1326,8 +1324,6 @@ $('div.search-box').on('click', function() {
 $('a.close').on('click', function(){
   $('div.layer-search-wrapper').removeClass('on');
 })
-
-
 
 
 
@@ -1339,33 +1335,25 @@ $('div.family-site').on('mouseleave', function() {
   $(this).removeClass('open');
 });
 
+
+
 // main-best
-$('li.water').on('mouseenter', function() {
+$('li.water').on('click', function() {
+  $('div.best-item').removeClass('on');
   $('div.best-item.water').addClass('on');
 });
-
-$('li.air').on('mouseenter', function() {
+$('li.air').on('click', function() {
+  $('div.best-item').removeClass('on');
   $('div.best-item.air').addClass('on');
 });
-$('li.air').on('mouseleave', function() {
-  $('div.best-item.air').removeClass('on');
-});
-
-$('li.body').on('mouseenter', function() {
+$('li.body').on('click', function() {
+  $('div.best-item').removeClass('on');
   $('div.best-item.body').addClass('on');
 });
-$('li.body').on('mouseleave', function() {
-  $('div.best-item.body').removeClass('on');
-});
-
-$('li.sleep').on('mouseenter', function() {
+$('li.sleep').on('click', function() {
+  $('div.best-item').removeClass('on');
   $('div.best-item.sleep').addClass('on');
 });
-$('li.sleep').on('mouseleave', function() {
-  $('div.best-item.sleep').removeClass('on');
-});
-
-
 
 
 
