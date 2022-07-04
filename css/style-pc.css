@@ -72,19 +72,30 @@ body {font-family: 'SpoqaHanSansNeo', sans-serif; font-size: 14px; font-weight: 
 #gnb-right > ul > li > a {display: block; padding-top: 24px;}
 #gnb-right > a.my:hover + ul.my-list {display: block;}
 
-#layer-search {position: fixed; left: 0; top: 0; width: 100%; background-color: #ffffff; z-index: 1000000000000; color: #000000; display: none;}
+#layer-search {position: fixed; left: 0; top: 0; width: 100%; background-color: #ffffff; z-index: 1000000; color: #000000;}
 #layer-search.on {display: block;}
-#layer-search > div.container {position: relative; max-width: 1000px; margin: 0 auto; padding-top: 80px; padding-bottom: 60px;}
-#layer-search div.input {position: relative; width: 500px; margin: 0 auto 40px auto;}
-#layer-search div.input input {width: 100%; height: 60px; box-sizing: border-box; padding: 0; border: none; border-bottom: 1px solid #000000; font-family: inherit; font-size: 24px; color: #666666; transition: border-color 0.3s}
-#layer-search div.input input:focus {border-bottom-color: #1a7cd2; outline: none;}
-#layer-search div.input ::placeholder {font-size: 24px; color: #999999;}
-#layer-search div.input a {position: absolute; right: 0; top: 50%; transform: translate(0, -50%); width: 36px;}
-#layer-search ul.search-tag {overflow: hidden; font-size: 14px;}
-#layer-search ul.search-tag > li {float: left; margin: 0 10px 10px 0;}
-#layer-search ul.search-tag > li > a {display: block; border: 1px solid #cccccc; border-top-left-radius: 8px; border-bottom-right-radius: 8px; padding: 8px 16px; transition: all 0.3s;}
-#layer-search ul.search-tag > li > a:hover {background-color: #333333; color: #ffffff; border-color: #333333;}
-#layer-search a.close {position: absolute; top: 30px; right: -50px; width: 30px;}
+#layer-search > div.container {position: relative; width: 600px; margin: 0 auto; padding-top: 52px; background-color: powderblue;}
+#layer-search div.input {position: relative; width: 100%; height: 42px; padding: 0 20px 0 24px; border: 2px solid #1b2529; border-radius: 21px; box-sizing: border-box;}
+#layer-search div.input input {position: absolute; top: 0; width: 488px; height: 38px; box-sizing: border-box; font-family: inherit; font-size: 14px; border: none;}
+#layer-search div.input input:focus {border-bottom-color: #1a7cd2;}
+#layer-search div.input button {position: absolute; right: 21px; top: 50%; transform: translate(0, -50%); width: 24px; height: 27px; padding: 0; border: 0; background-color: transparent;}
+#layer-search div.input button img {width: 100%;}
+#layer-search div.result {overflow: hidden; padding: 0 24px 60px; background-color: lemonchiffon;}
+#layer-search div.result > div {float: left; width: calc(50% - 48px);}
+#layer-search div.result em {display: block; margin: 40px 0 15px; font-size: 16px; font-weight: 700; line-height: 1;}
+#layer-search div.result > div.recent-search {background-color: lightgreen;}
+#layer-search div.result > div.recent-search > p {font-size: 15px; color: #90a0a6;}
+
+#layer-search div.result > div.popular-search {margin-left: 96px; background-color: lavender;}
+#layer-search div.result > div.popular-search > ul {}
+#layer-search div.result > div.popular-search > ul > li {overflow: hidden;}
+#layer-search div.result > div.popular-search > ul > li > a {display: block; height: 18px; margin-bottom: 25px; font-size: 16px; line-height: 1; background-color: lightsalmon;}
+#layer-search div.result > div.popular-search > ul > li > a > * {float: left;}
+#layer-search div.result > div.popular-search > ul > li > a > p.rank {}
+#layer-search div.result > div.popular-search > ul > li > a > p.word {}
+#layer-search div.result > div.popular-search > ul > li > a > img {}
+
+#layer-search a.close {position: absolute; width: 70px; height: 72px; left: 50%; top: 100%; transform: translate(-50%, 0);}
 
 
 
