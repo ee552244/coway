@@ -221,95 +221,117 @@
       <a href="#"><img src="img/icon-close.png" alt="검색창 닫기"></a> -->
     </div>
 
-    <div id="layer-search">
-      <div class="container">
-        <div class="input">
-          <label for="search-keyword" class="ir-hidden">검색어</label>
-          <input type="text" name="" id="search-keyword" value="" />
-          <button><img src="img/icon-search.png" alt="검색" /></button>
-        </div>
-        <div class="result">
-          <div class="recent-search">
-            <em>최근 검색어</em>
-            <p>최근 검색한 단어가 없습니다.</p>
+    <div class="layer-search-wrapper">
+      <div id="layer-search">
+        <div class="container">
+          <div class="input">
+            <label for="search-keyword" class="ir-hidden">검색어</label>
+            <input type="text" name="" id="search-keyword" value="" />
+            <button><img src="img/icon-search.png" alt="검색" /></button>
           </div>
-          <div class="popular-search">
-            <em>인기 검색어 TOP 10</em>
-            <ul>
-              <li>
-                <a href="#">
-                  <p class="rank">1</p>
-                  <p class="word">얼음정수기</p>
-                  <img src="img/icon-search-maintain.png" alt="순위 유지">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">2</p>
-                  <p class="word">제습기</p>
-                  <img src="img/icon-search-up.png" alt="순위 상승">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">3</p>
-                  <p class="word">아이콘 얼음정수기</p>
-                  <img src="img/icon-search-down.png" alt="순위 하락">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">4</p>
-                  <p class="word">아이콘 정수기2</p>
-                  <img src="img/icon-search-new.png" alt="새로운 검색어">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">5</p>
-                  <p class="word">정수기</p>
-                  <img src="img/icon-search-maintain.png" alt="순위 유지">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">6</p>
-                  <p class="word">CHP-7211N</p>
-                  <img src="img/icon-search-new.png" alt="새로운 검색어">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">7</p>
-                  <p class="word">CHPI-7400N</p>
-                  <img src="img/icon-search-down.png" alt="순위 하락">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">8</p>
-                  <p class="word">필터</p>
-                  <img src="img/icon-search-up.png" alt="순위 상승">
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">9</p>
-                  <p class="word">비데</p>
-                  <img src="img/icon-search-up.png" alt="순위 상승" />
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <p class="rank">10</p>
-                  <p class="word">AS</p>
-                  <img src="img/icon-search-down.png" alt="순위 하락" />
-                </a>
-              </li>
-            </ul>
+          <div class="result">
+            <div class="recent-search">
+              <em>최근 검색어</em>
+              <p>최근 검색한 단어가 없습니다.</p>
+            </div>
+            <div class="popular-search">
+              <em>인기 검색어 TOP 10</em>
+              <ul>
+                <li>
+                  <a href="#">
+                    <p class="rank">1</p>
+                    <p class="word">얼음정수기</p>
+                    <span>
+                      <img src="img/icon-search-maintain.png" alt="순위 유지">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">2</p>
+                    <p class="word">제습기</p>
+                    <span>
+                      <img src="img/icon-search-up.png" alt="순위 상승">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">3</p>
+                    <p class="word">아이콘 얼음정수기</p>
+                    <span>
+                      <img src="img/icon-search-down.png" alt="순위 하락" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">4</p>
+                    <p class="word">아이콘 정수기2</p>
+                    <span>
+                      <img src="img/icon-search-new.png" alt="새로운 검색어">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">5</p>
+                    <p class="word">정수기</p>
+                    <span>
+                      <img src="img/icon-search-maintain.png" alt="순위 유지">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">6</p>
+                    <p class="word">CHP-7211N</p>
+                    <span>
+                      <img src="img/icon-search-new.png" alt="새로운 검색어">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">7</p>
+                    <p class="word">CHPI-7400N</p>
+                    <span>
+                      <img src="img/icon-search-down.png" alt="순위 하락" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">8</p>
+                    <p class="word">필터</p>
+                    <span>
+                      <img src="img/icon-search-down.png" alt="순위 하락" />
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">9</p>
+                    <p class="word">비데</p>
+                    <span>
+                      <img src="img/icon-search-up.png" alt="순위 상승">
+                    </span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <p class="rank">10</p>
+                    <p class="word">AS</p>
+                    <span>
+                      <img src="img/icon-search-new.png" alt="새로운 검색어">
+                    </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <a href="#" class="close"><img alt="검색창 닫기" src="img/icon-search-close.png" /></a>
         </div>
-        <a href="#" class="close"><img alt="검색창 닫기" src="img/icon-search-close.png" /></a>
       </div>
     </div>
     
@@ -1293,13 +1315,26 @@ $('#gnb-left > ul > li.sub').on('mouseleave', function() {
   $(this).removeClass('on');
 });
 
+
+
+
+
+// layer-search
+$('div.search-box').on('click', function() {
+  $('div.layer-search-wrapper').addClass('on');
+});
+$('a.close').on('click', function(){
+  $('div.layer-search-wrapper').removeClass('on');
+})
+
+
+
+
+
 // footer family-site
 $('div.family-site').on('mouseenter', function(){
   $(this).addClass('open');
 });
-// $('div.family-site').click(function(){
-//   $(this).addClass('open');
-// })
 $('div.family-site').on('mouseleave', function() {
   $(this).removeClass('open');
 });
