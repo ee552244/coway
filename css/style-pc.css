@@ -8,8 +8,6 @@ h1, h2, h3, h4, h5, h6 {font-weight: 500;}
 a {color: inherit; text-decoration: inherit;}
 li {list-style: none;}
 address, em, i, cite {font-style: normal;}
-i[class^="fa"] {position: relative; display: inline-block; vertical-align: middle;}
-i[class^="fa"] span {position: absolute; left: -9999px;}
 .ir-hidden {position: absolute; left: -9999px;}
 .mobile {display: none !important;}
 
@@ -17,7 +15,7 @@ i[class^="fa"] span {position: absolute; left: -9999px;}
 
 /* common */
 body {font-family: 'SpoqaHanSansNeo', sans-serif; font-size: 14px; font-weight: 400; color: #1b2529; line-height: 1.3em; background-color: #ffffff;}
-#wrapper {min-width: 1200px; width: 100%; margin: 0 auto; overflow: hidden;}
+#wrapper {min-width: 1200px; margin: 0 auto; overflow: hidden;}
 #skip-nav {position: fixed; left: 0; top: -34px; padding: 7px 0; width: 100%; height: auto; text-align: center; line-height: 1.3em; background-color: #00a7e1; color: #ffffff; border: 1px solid #136886; z-index: 100000;}
 #skip-nav:focus {top: 0;}
 

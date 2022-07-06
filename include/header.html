@@ -2,9 +2,13 @@
 <header id="header">
   <div class="box">
     <h1>
-      <a href=""><img src="/img/logo.png" alt="coway" /></a>
+      <a href="/index.html">
+        <img src="/img/logo.png" alt="coway" class="pc" />
+        <img src="/img/logo-white.png" alt="coway" class="mobile" />
+      </a>
     </h1>
-    <nav id="gnb-left">
+    <a href="#" class="search-mobile"><img src="/img/icon-search-white.png" alt="검색창 열기"></a>
+    <nav id="gnb-left" class="pc">
       <ul>
         <li class="sub">
           <a href="#">제품</a>
@@ -162,7 +166,7 @@
         </li>
       </ul>          
     </nav>
-    <div id="gnb-right">
+    <div id="gnb-right" class="pc">
       <div class="search-box">
         <a href="#">노블 컬렉션 보러가기</a>
         <a href="#"><img src="/img/icon-search-auto.png" alt="전체검색" /></a>
@@ -204,6 +208,7 @@
         <div class="container">
           <div class="input">
             <label for="search-keyword" class="ir-hidden">검색어</label>
+            <a href="#" class="mobile"><img src="/img/icon-search-close-m.png" alt="검색창 닫기"></a>
             <input type="text" name="" id="search-keyword" value="" />
             <button><img src="/img/icon-search.png" alt="검색" /></button>
           </div>
