@@ -94,9 +94,9 @@ div.layer-search-wrapper.on {display: block;}
 #layer-search div.result > div.popular-search > ul > li > a > p.rank {width: 20px; margin-right: 24px; font-weight: 700; text-align: center;}
 #layer-search div.result > div.popular-search > ul > li > a > p.word {}
 #layer-search div.result > div.popular-search > ul > li > a > span {position: absolute; width: 30px; height: 11px; right: 0; top: 50%; transform: translate(0, -50%);}
-#layer-search div.result > div.popular-search > ul > li > a > span > img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%);}
-/* #layer-search div.result > div.popular-search > ul > li > a > span > img {height: 100%;} */
-#layer-search div.result > div.popular-search > ul > li > a > span.maintain {width: 9px; height: 2px;}
+#layer-search div.result > div.popular-search > ul > li > a > span > img {position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); width: 9px;}
+#layer-search div.result > div.popular-search > ul > li > a > span.maintain > img {width: 9px; height: 2px;}
+#layer-search div.result > div.popular-search > ul > li > a > span.new > img {width: 100%;}
 #layer-search a.close {position: absolute; width: 70px; height: 72px; left: 50%; top: 100%; transform: translate(-50%, 0);}
 
 
@@ -182,7 +182,7 @@ dd.blue {color: #00a8e3;}
 
 
 
-#main-smarthome {padding: 60px 0; margin: 24px 0; height: 221px; background: url(../img/bgd-01.png); background-size: cover;  max-width: 1880px;}
+#main-smarthome {padding: 60px 0; margin: 24px 0; height: 221px; background: url(../img/main-smart-bg.png); background-size: cover;  max-width: 1880px;}
 #main-smarthome {position: relative;}
 #main-smarthome > h2 {position: absolute; display: block; margin-bottom: 60px; text-align: center; left: 50%; transform: translate(-50%, 0); font-size: 38px; font-weight: bold; line-height: 54px; color: #ffffff;}
 #main-smarthome  > ul {position: absolute; display: block; left: 50%; transform: translate(-50%, 100%); width: 1200px;}

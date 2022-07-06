@@ -14,28 +14,39 @@
       <main id="main">
         <section id="main-slide">
           <h2 class="ir-hidden">메인 슬라이드</h2>
-          <ul class="slide">
-            <li>
-              <img src="img/main-slide-01.jpg" alt="" />
-              <div class="box">
-                <a href="#">
-                  <em>딱! 5시간, NEW 아이콘 정수기 구매 혜택</em>
-                  <p>방송 보고 아이콘 정수기 2 구매 시<br />3D 무빙 에어 서큘레이터 증정!</p>
-                  <em class="more">자세히 보기<img src="img/icon-right-arrow-black.png" alt="" /></em>
-                </a>
-              </div>                          
-            </li>
-            <li class="on">
-              <img src="img/main-slide-02.jpg" alt="" />
-              <div class="box">
-                <a href="#">
-                  <em>코웨이로 꾸미는 우리집 홈카페</em>
-                  <p>정수기 구매하면<br />홈카페 아이템 100% 당첨!</p>
-                  <em>자세히 보기<img src="img/icon-right-arrow-black.png" alt="" /></em>
-                </a>
-              </div>                         
-            </li>
-          </ul>
+          <div class="slide-area">
+            <ul class="slide">
+              <li class="on">
+                <img src="img/main-slide-01.jpg" alt="" class="pc" />
+                <img src="img/main-slide-01-m.jpg" alt="" class="mobile" />
+                <div class="box pc">
+                  <a href="#">
+                    <em>딱! 5시간, NEW 아이콘 정수기 구매 혜택</em>
+                    <p>방송 보고 아이콘 정수기 2 구매 시<br />3D 무빙 에어 서큘레이터 증정!</p>
+                    <em class="more">자세히 보기<img src="img/icon-right-arrow-black.png" alt="" /></em>
+                  </a>
+                </div>
+                <div class="box mobile">
+                  <a href="#">
+                    <em>코웨이로 꾸미는 우리집 홈카페</em>
+                    <p>정수기 구매하면<br />홈카페템 100% 당첨!</p>
+                    <em class="more">자세히 보기<img src="img/icon-right-arrow-black.png" alt="" /></em>
+                  </a>
+                </div>
+              </li>
+              <li>
+                <img src="img/main-slide-02.jpg" alt="" class="pc"/>
+                <img src="img/main-slide-02-m.jpg" alt="" class="mobile" />
+                <div class="box pc">
+                  <a href="#">
+                    <em>코웨이로 꾸미는 우리집 홈카페</em>
+                    <p>정수기 구매하면<br />홈카페 아이템 100% 당첨!</p>
+                    <em class="more">자세히 보기<img src="img/icon-right-arrow-black.png" alt="" /></em>
+                  </a>
+                </div>                         
+              </li>
+            </ul>
+          </div>
           <div class="control">
             <a href="#" class="prev">
               <img src="img/icon-prev-black.png" alt="이전 슬라이드 보기" />
@@ -61,12 +72,13 @@
         </section>
         
         <section id="main-smarthome">
-          <h2>코웨이로 채우는 스마트홈</h2>
+          <h2 class="pc">코웨이로 채우는 스마트홈</h2>
+          <h2 class="mobile">코웨이로 채우는<br />스마트홈</h2>
           <ul>
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-water-care.png" alt="" />
+                  <img src="img/main-smart-water.png" alt="" />
                 </div>
                 <em>정수기</em>
                 <p>Water Care</p>
@@ -75,7 +87,7 @@
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-air-care.png" alt="" />
+                  <img src="img/main-smart-air.png" alt="" />
                 </div>
                 <em>공기청정기</em>
                 <p>Air Care</p>
@@ -84,7 +96,7 @@
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-body-care.png" alt="" />
+                  <img src="img/main-smart-body.png" alt="" />
                 </div>
                 <em>비데/연수기</em>
                 <p>Body Care</p>
@@ -93,7 +105,7 @@
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-body-care.png" alt="" />
+                  <img src="img/main-smart-sleep.png" alt="" />
                 </div>
                 <em>매트리스/프레임</em>
                 <p>Sleep Care</p>
@@ -102,7 +114,7 @@
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-sleep-care.png" alt="" />
+                  <img src="img/main-smart-living.png" alt="" />
                 </div>
                 <em>건강/주방 가전</em>
                 <p>Living Care</p>
@@ -111,7 +123,7 @@
             <li>
               <a href="#">
                 <div class="img-wrap">
-                  <img src="img/main-filter.png" alt="" />
+                  <img src="img/main-smart-filter.png" alt="" />
                 </div>
                 <em>필터/소모품</em>
                 <p>Filter</p>
@@ -181,7 +193,7 @@
             </div>
             <a href="#" class="other">다른 조건 보기</a>
             <a href="#" class="go">제품 보러가기</a>
-            <div class="option-slide">
+            <div class="option-slide pc">
               <ul class="option-list">
                 <li><img src="img/main-option-01.png" alt="" /></li>
                 <li><img src="img/main-option-02.png" alt="" /></li>
@@ -932,6 +944,16 @@
   $('a.close').on('click', function() {
     $('div.layer-search-wrapper').removeClass('on');
   })
+
+  // layer-search mobile
+  $('a.search-mobile').on('click', function() {
+    $('#layer-search').addClass('on');
+  });
+  $('div.input > a.mobile').on('click', function() {
+    $('#layer-search').removeClass('on');
+  })
+
+
 
 
 
