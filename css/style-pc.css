@@ -12,7 +12,6 @@ address, em, i, cite {font-style: normal;}
 .mobile {display: none !important;}
 
 
-
 /* common */
 body {font-family: 'SpoqaHanSansNeo', sans-serif; font-size: 14px; font-weight: 400; color: #1b2529; line-height: 1.3em; background-color: #ffffff;}
 #wrapper {min-width: 1200px; margin: 0 auto; overflow: hidden;}
@@ -32,10 +31,10 @@ body {font-family: 'SpoqaHanSansNeo', sans-serif; font-size: 14px; font-weight: 
 #gnb-left > ul::after {content: ''; display: block; clear: both;}
 #gnb-left > ul > li {float: left; padding: 0 15px; font-size: 16px; font-weight: 700;}
 #gnb-left > ul > li + li {margin-left: 12px;}
-#gnb-left > ul > li > a {display: block; height: 50px;  box-sizing: border-box;}
-#gnb-left > ul > li:last-child > a {width: 90px; background: url(../img/icon-gnb-live.png) right 0 top 0 no-repeat;}
+#gnb-left > ul > li > a {display: block; height: 50px; box-sizing: border-box;}
+#gnb-left > ul > li.live > a {width: 90px; background: url(../img/icon-gnb-live.png) right 0 top 0 no-repeat;}
 #gnb-left > ul > li > a:hover {color: #00a8e3; border-bottom: 2px solid #00a8e3;}
-#gnb-left > ul > li:last-child > a:hover {background-image: url(../img/icon-gnb-live-blue.png)}
+#gnb-left > ul > li.live > a:hover {background-image: url(../img/icon-gnb-live-blue.png)}
 
 #gnb-left > ul > li > ul {position: absolute; padding: 35px 5px 35px 0; left: -140px; width: 1400px; height: 0; z-index: 100; display: none; transition: all 0.3s;}
 #gnb-left > ul > li:nth-child(n+3) {position: relative;}
@@ -65,8 +64,9 @@ body {font-family: 'SpoqaHanSansNeo', sans-serif; font-size: 14px; font-weight: 
 #gnb-right > div.search-box > a:nth-child(1) {position: absolute; width: 270px; line-height: 42px; left: 20px; color: #90a0a6;}
 #gnb-right > div.search-box > a:nth-child(2) {position: absolute; left: 270px; width: 20px; height: 42px; padding: 0 10px;}
 #gnb-right > div.search-box > a:nth-child(2) > img {position: absolute; top: 50%; transform: translate(0, -50%);}
-#gnb-right > a {float: left; margin-left: 19px; padding-top: 8px; height: 34px;}
-#gnb-right > ul {position: absolute; left: 352px; top: 42px; transform: translate(-50%, 0); padding: 0 30px 24px; box-shadow: 0 1px 8px rgb(0 0 0 / 7%); width: 145px; box-sizing: border-box; border: 1px solid #ffffff; border-radius: 4px; background-color: #ffffff; display: none;}
+#gnb-right > a {position: relative; float: left; margin-left: 19px; padding-top: 8px; height: 34px;}
+#gnb-right > a > span {position: absolute; left: 15px; top: 0; min-width: 20px; height: 20px; line-height: 20px; font-size: 12px; font-weight: 500; text-align: center; color: #ffffff; border-radius: 20px; background-color: #00a8e3;}
+#gnb-right > ul.my-list {position: absolute; left: 352px; top: 42px; transform: translate(-50%, 0); padding: 0 30px 24px; box-shadow: 0 1px 8px rgb(0 0 0 / 7%); width: 145px; box-sizing: border-box; border: 1px solid #ffffff; border-radius: 4px; background-color: #ffffff; display: none;}
 #gnb-right > ul > li > a {display: block; padding-top: 24px;}
 #gnb-right > a.my:hover + ul.my-list {display: block;}
 
@@ -103,22 +103,32 @@ div.layer-search-wrapper.on {display: block;}
 
 /* footer */
 #footer {border-top: 1px solid #e8ecee; width: 100%;}
-#footer > div.box {position: relative; margin: 0 auto; padding: 15px 5px; max-width: 1400px; height: 30px;}
-#footer > div.box > ul.footer-list {height: 100%; line-height: 30px; color: #90a0a6;}
+#footer > div.border {border-bottom: 1px solid #e8ecee;}
+#footer > div.border > div.box {position: relative; margin: 0 auto; padding: 15px 5px; max-width: 1400px; height: 60px; box-sizing: border-box;}
+#footer > div.border > div.box > ul.footer-list {height: 100%; line-height: 30px; color: #90a0a6;}
 ul.footer-list > li {margin-right: 5px;}
 ul.footer-list > li + li::before {content: '·'; float: left; margin-left: 5px; color: #90a0a6;}
 ul.footer-list > li:nth-child(5) {font-weight: 700;}
 ul.footer-list > li > a {display: block; float: left;}
 
-#footer > div.box > div.family-site {position: absolute; height: 30px; right: 5px; top: 50%; transform: translate(0, -50%);}
-#footer > div.box > div.family-site > a {position: relative; display: block; width: 160px; height: 30px; line-height: 30px; font-size: 12px; color: #90a0a6; border-radius: 4px; border: 2px solid transparent; border-top: 0; background: #f2f4f5 url(../img/icon-open.png) right 10px center no-repeat; background-size: 11px auto;}
-#footer > div.box > div.family-site > a > span {margin-left: 10px;}
-#footer > div.box > div.family-site > ul {position: absolute; display: block; left: 0; bottom: 30px; width: 100%; box-sizing: border-box; border: 2px solid #1b2529; border-bottom: 0; border-top-left-radius: 4px; border-top-right-radius: 4px; background-color: #ffffff; display: none;}
-#footer > div.box > div.family-site.on > a {border: 2px solid #1b2529; border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #ffffff; background-image: url(../img/icon-hide.png);}
-#footer > div.box > div.family-site.on > ul {display: block;}
-#footer > div.box > div.family-site > ul > li {font-size: 12px; line-height: 30px; color: #1b2529;}
-#footer > div.box > div.family-site > ul > li:hover {background-color: #f2f4f5;}
-#footer > div.box > div.family-site > ul > li > a {display: block; padding-left: 10px;}
+#footer > div.border > div.box > div.family-site {position: absolute; height: 30px; right: 5px; top: 50%; transform: translate(0, -50%);}
+#footer > div.border > div.box > div.family-site > a {position: relative; display: block; width: 160px; height: 30px; line-height: 30px; padding-left: 10px; font-size: 12px; color: #90a0a6; border-radius: 4px; border: 2px solid transparent; border-top: 0; background: #f2f4f5 url(../img/icon-open.png) right 10px center no-repeat; background-size: 11px auto;}
+#footer > div.border > div.box > div.family-site > ul {position: absolute; display: block; left: 0; bottom: 30px; width: 100%; box-sizing: border-box; border: 2px solid #1b2529; border-bottom: 0; border-top-left-radius: 4px; border-top-right-radius: 4px; background-color: #ffffff; display: none;}
+#footer > div.border > div.box > div.family-site.on > a {border: 2px solid #1b2529; border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #ffffff; background-image: url(../img/icon-hide.png);}
+#footer > div.border > div.box > div.family-site.on > ul {display: block;}
+#footer > div.border > div.box > div.family-site > ul > li {font-size: 12px; line-height: 30px; color: #1b2529;}
+#footer > div.border > div.box > div.family-site > ul > li:hover {background-color: #f2f4f5;}
+#footer > div.border > div.box > div.family-site > ul > li > a {display: block; padding-left: 10px;}
+
+/* #footer > div.border > div.box > div.family-site {position: absolute; height: 30px; right: 5px; top: 50%; transform: translate(0, -50%);}
+#footer > div.border > div.box > div.family-site > a {position: relative; display: block; width: 160px; height: 30px; line-height: 30px; font-size: 12px; color: #90a0a6; border-radius: 4px; border: 2px solid transparent; border-top: 0; background: #f2f4f5 url(../img/icon-open.png) right 10px center no-repeat; background-size: 11px auto;}
+#footer > div.border > div.box > div.family-site > a > span {margin-left: 10px;}
+#footer > div.border > div.box > div.family-site > ul {position: absolute; display: block; left: 0; bottom: 30px; width: 100%; box-sizing: border-box; border: 2px solid #1b2529; border-bottom: 0; border-top-left-radius: 4px; border-top-right-radius: 4px; background-color: #ffffff; display: none;}
+#footer > div.border > div.box > div.family-site.on > a {border: 2px solid #1b2529; border-top: 0; border-top-left-radius: 0; border-top-right-radius: 0; background-color: #ffffff; background-image: url(../img/icon-hide.png);}
+#footer > div.border > div.box > div.family-site.on > ul {display: block;}
+#footer > div.border > div.box > div.family-site > ul > li {font-size: 12px; line-height: 30px; color: #1b2529;}
+#footer > div.border > div.box > div.family-site > ul > li:hover {background-color: #f2f4f5;}
+#footer > div.border > div.box > div.family-site > ul > li > a {display: block; padding-left: 10px;} */
 
 #footer > div.container {position: relative; max-width: 1400px; padding: 0 5px 25px; margin: 0 auto;}
 #footer > div.container > div.footer-info {overflow: hidden; padding-top: 25px; color: #90a0a6;}
@@ -145,6 +155,8 @@ ul.footer-logo > li > a > img {width: 100%;}
 
 
 /* main */
+section {margin: 0 auto;}
+
 div.title {margin-bottom: 40px; text-align: center;}
 div.title > h2 {display: block; margin-bottom: 6px; font-size: 15px; font-weight: bold;}
 div.title > em {display: block; font-size: 38px; font-weight: bold; line-height: 54px;}
@@ -182,7 +194,7 @@ dd.blue {color: #00a8e3;}
 
 
 
-#main-smarthome {padding: 60px 0; margin: 24px 0; height: 221px; background: url(../img/main-smart-bg.png); background-size: cover;  max-width: 1880px;}
+#main-smarthome {padding: 60px 0; margin: 24px auto; height: 221px; background: url(../img/main-smart-bg.png); background-size: cover;  max-width: 1880px;}
 #main-smarthome {position: relative;}
 #main-smarthome > h2 {position: absolute; display: block; margin-bottom: 60px; text-align: center; left: 50%; transform: translate(-50%, 0); font-size: 38px; font-weight: bold; line-height: 54px; color: #ffffff;}
 #main-smarthome  > ul {position: absolute; display: block; left: 50%; transform: translate(-50%, 100%); width: 1200px;}
@@ -378,8 +390,8 @@ div.benefits-slide-area:hover > a {display: block;}
 
 
 
-#main-help {margin: 120px 142px 120px; overflow: hidden; max-width: 1880px;}
-#main-help > div.box {position: relative; max-width: 1240px; min-width: 1160px; margin: 0 auto;}
+#main-help {margin: 120px auto 120px; overflow: hidden; max-width: 1880px;}
+#main-help > div.box {position: relative; max-width: 1200px; min-width: 1160px; margin: 0 auto;}
 #main-help > div.box > div {overflow: hidden; position: relative;}
 #main-help > div.box > div > div.title {float: left; text-align: left; overflow: hidden;}
 #main-help > div.box > div > div.q-slide {position: absolute; right: 0; top: 0; width: 744px; height: 150px;}
@@ -400,7 +412,7 @@ div.benefits-slide-area:hover > a {display: block;}
 
 
 #main-help > div.box > div.box {float: left; position: relative; box-sizing: border-box; width: 585px; padding: 40px 60px 36px 50px; margin-top: 60px; border: 1px solid #e8ecee; border-radius: 8px;}
-#main-help > div.box > div.box:last-child {position: absolute; right: 0;}
+#main-help > div.box > div.box:last-of-type {margin-left: 30px;}
 #main-help > div.box > div.box > em {margin-bottom: 12px; font-size: 19px; font-weight: 700; line-height: 1;}
 #main-help > div.box > div.box > p {margin-bottom: 20px; font-size: 15px; color: #90a0a6; line-height: 1;}
 #main-help > div.box > div.box > a {display: inline-block; padding: 0 12px; background-color: #1b2529; height: 30px; border: 1px solid #364449; border-radius: 4px; color: #ffffff; line-height: 30px; font-size: 13px;}
